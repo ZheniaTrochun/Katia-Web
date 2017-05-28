@@ -1,0 +1,299 @@
+@font-face {
+    font-family: "Playfair Display SC";
+    src: url("fonts/acquest_script+.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Mobilemenu {
+	display: none;
+}
+
+body {
+  width: 100%;
+	margin: 0;
+  overflow-x: hidden;
+}
+
+div{
+  font-size: 20px;
+}
+#big_block {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  height: 100%;
+  width: 100%;
+  display:flex;
+  flex-direction:row;
+}
+#header{
+  border: 1px solid black;
+  background-color: #ccc;
+  height: 40%;
+  width: 100%;
+  background: url('/image/title_image.jpg') no-repeat center bottom;
+  font-size: 50px;
+  text-align: center;
+  vertical-align: middle;
+  color: yellow;
+}
+#menu{
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+}
+.footer{
+  border: 1px solid black;
+  background-color: #ccc;
+  height: 20%;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+#part1 {
+  height: 100%;
+  display:block;
+  background-color: #FFEC49;
+  flex-direction:column;
+}
+
+#part2 {
+  width: 100%;
+  height: 100%;
+  display:flex;
+  flex-direction:row;
+}
+#part2_ {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+#part3 {
+  width: 100%;
+  height: 100%;
+  display:flex;
+  flex-direction:row;
+}
+#part3_1 {
+	border: 1px solid black;
+	width: 80%;
+}
+#part3_2 {
+	border: 1px solid black;
+	width: 20%;
+}
+
+#part2_1 {
+  height: 100%;
+  width: 20%;
+  border: 1px solid black;
+}
+#part2_2 {
+  min-height: 65px;
+  width: 100%;
+  border: 1px solid black;
+  background: #CCC31E;
+}
+#content {
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  background: #FFEC3B;
+}
+#right_col {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+#content_wrapper {
+	margin: auto;
+}
+
+q {
+  font-family: Times, serif, acquest_script;
+  font-style: italic;
+  color: #008;
+}
+#menu p{
+  color: #16042A;
+}
+#navbar {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+}
+#navbar a {
+  background-color: #949494;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-left: 5px solid #33ADFF;
+  display: block;
+}
+#navbar li {
+  border-left: 10px solid #666;
+  border-bottom: 1px solid #666;
+}
+
+.cardHolder {
+  display: inline-block;
+  position: relative;
+}
+
+@media screen and (max-width: 768px){
+  #big_block {
+    display: block;
+  }
+
+	#menu p {
+		display: none;
+	}
+
+  #navbar {
+    display: flex;
+  }
+
+  #navbar li {
+    width: 33.3%;
+  }
+
+  .footer{
+	display:none;
+	}
+
+  #mobileFooter {
+    display: block;
+  }
+
+		#part1 {
+		height: 100%;
+	}
+
+	#part2 {
+	  height: 70%;
+	}
+
+	#part3 {
+	  height: 30%;
+	}
+
+
+	/*.Mobilemenu {
+		display: block;
+		background-color: #949494;
+		border-right: 1px solid black;
+		border-left: 1px solid black;
+		border-bottom: 1px solid black;
+	}*/
+
+	.navbar {
+		width: 20%;
+		float: left;
+		text-align: center;
+		height: 40px;
+
+		vertical-align: middle;
+		line-height: 40px;
+
+		background-color: #949494;
+	    color: #fff;
+	    font-weight: bold;
+	}
+
+
+	a{
+		color: white;
+		text-decoration: none;
+	}
+
+	.decorate {
+		float: left;
+		width: 1%;
+		height: 80px;
+		background-color: #33ADFF;
+	}
+
+	.afterFloat {
+		clear: left;
+	}
+}
+
+@media only screen and (max-device-width: 768px){
+  #big_block {
+    display: block;
+  }
+
+	#menu p {
+		display: none;
+	}
+
+  #navbar {
+    display: flex;
+  }
+
+  #navbar li {
+    width: 33.3%;
+  }
+
+  .footer{
+	display:none;
+	}
+
+  #mobileFooter {
+    display: block;
+  }
+
+		#part1 {
+		height: 100%;
+	}
+
+	#part2 {
+	  height: 70%;
+	}
+
+	#part3 {
+	  height: 30%;
+	}
+
+
+	/*.Mobilemenu {
+		display: block;
+		background-color: #949494;
+		border-right: 1px solid black;
+		border-left: 1px solid black;
+		border-bottom: 1px solid black;
+	}*/
+
+	.navbar {
+		width: 20%;
+		float: left;
+		text-align: center;
+		height: 40px;
+
+		vertical-align: middle;
+		line-height: 40px;
+
+		background-color: #949494;
+	    color: #fff;
+	    font-weight: bold;
+	}
+
+
+	a{
+		color: white;
+		text-decoration: none;
+	}
+
+	.decorate {
+		float: left;
+		width: 1%;
+		height: 80px;
+		background-color: #33ADFF;
+	}
+
+	.afterFloat {
+		clear: left;
+	}
+}

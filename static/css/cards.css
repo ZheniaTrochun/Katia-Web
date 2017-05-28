@@ -1,0 +1,50 @@
+#right_col {
+  position: relative;
+  display: block;
+  width: 1100px;
+}
+#rectangle {
+  margin: 2%;
+  width: 300px;
+  height: 300px;
+  background: #2AFF3B;
+  border: 2px solid black;
+  font-size: 180px;
+  text-align: center;
+  color: #000000;
+}
+#rectangle1 {
+  margin: 2%;
+  width: 300px;
+  height: 300px;
+  background: #2AFF3B;
+  border: 2px solid black;
+  font-size: 180px;
+  text-align: center;
+  color: #ED0714;
+}
+
+.abstrDiv {
+  height: 304px;
+  width: 304px;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  z-index: 1000;
+}
+
+.cardHolder {
+  position: absolute;
+}
+
+#card1 {
+  left: 0;
+}
+
+#card2 {
+  left: 309px;
+}
+
+#card3 {
+  left: 618px;
+}

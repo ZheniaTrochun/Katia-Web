@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Photogallery</title>
+    <meta name="description" content="My first work">
+    <meta name="author" content="Kate Seniva">
+    <link href="/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen" title="no title">
+  </head>
+  <body>
+	<div id="big_block">
+		<div id="part1">
+			<div id = "header">
+			 <p>Фотогалерея</p>
+			 </div>
+		<div id="menu">
+			<p>Меню сайту</p>
+			<ul id="navbar">
+              <li><a href="index.html">Головна</a></li>
+              <li><a href="page_table.html">Таблиця</a></li>
+              <li><a href="page_cards.html">Карти</a></li>
+            </ul>
+		</div>
+		<div id="footer">
+			<address>
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Subscribe</button>
+			  <p>Виконала студентка групи ІП-54 <a href="mailto:katrusya.seniva@gmail.com">Сеніва Катерина</a>.</p>
+			</address>
+		</div>
+		</div>
+		<div id="right_col">
+			<div id="part2">
+				<div id="part2_1">
+					<img src="/image/image4.jpg" width=100% height=100% hspace=0 vspace=0>
+				</div>
+				<div id="part2_">
+					<div id="part2_2">
+						<p>Метою даного сайту є сворення галереї фотографа</p>
+					</div>
+					<div id="content">
+						<span id="content_wrapper">
+							id="content"
+						</span>
+					</div>
+				</div>
+			</div>
+			<div id="part3">
+				<div id="part3_1">
+					<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#tableModal">ShowDB</button>
+				</div>
+				<div id="part3_2">
+					world
+				</div>
+			</div>
+		</div>
+	</div>
+
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Subscription form</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="input-group">
+              <span class="input-group-addon">Name</span>
+              <input id="login" type="text" class="form-control" name="email" placeholder="Name">
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">Phone</span>
+              <input id="phone" type="text" class="form-control" name="email" placeholder="Phone">
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">Email</span>
+              <input id="email" type="text" class="form-control" name="msg" placeholder="Email">
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">Time</span>
+              <select class="form-control" id="time">
+                <option>11:00</option>
+                <option>12:00</option>
+                <option>13:00</option>
+                <option>14:00</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" onclick="subscriptionSubmit()">Submit</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="successModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Success</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              Successful!
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="tableModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Database</h4>
+          </div>
+          <div class="modal-body" id="table-holder">
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div id="editModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Database</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="titleTextArea">Title:</label>
+              <input type="text" class="form-control" id="titleTextArea" disabled>
+            </div>
+
+            <div class="form-group">
+              <label for="metaTextArea">Meta:</label>
+              <textarea class="form-control" rows="8" id="metaTextArea"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="bodyTextArea">Body:</label>
+              <textarea class="form-control" rows="8" id="bodyTextArea"></textarea>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" onclick="saveRow()">Save</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/js/card.js"></script>
+    <script src="/js/form.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+
+</html>
